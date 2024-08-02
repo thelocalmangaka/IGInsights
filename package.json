@@ -1,0 +1,27 @@
+{
+  "name": "iginsights",
+  "version": "1.0.0",
+  "main": "commands/insight.js",
+  "scripts": {
+    "start": "./insight.sh -ctm",
+    "code": "node ./commands/code.js",
+    "token": "node ./commands/token.js",
+    "media": "node ./commands/media.js && ./commands/media.sh",
+    "insight": "node ./commands/insight.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thelocalmangaka/IGInsights.git"
+  },
+  "author": "Tlm Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thelocalmangaka/IGInsights/issues"
+  },
+  "homepage": "https://github.com/thelocalmangaka/IGInsights#readme",
+  "description": "Gets aggregate lifetime insight stats for Instagram Reels",
+  "type": "module",
+  "dependencies": {
+    "selenium-webdriver": "^4.23.0"
+  }
+}
