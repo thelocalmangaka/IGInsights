@@ -136,6 +136,8 @@ Media permalinks obtained and written to file.
 Insight ID's retrieved and written to file.
 ```
 
+**NOTE: This step will not work if you are not currently logged into your account on your browser, as highlighted on Step 1. Insight information will not be returned in the curl calls if you are not already logged in externally.**
+
 ### PART 4: Calculating Insights
 
 12. Lastly, the final command will be run:
