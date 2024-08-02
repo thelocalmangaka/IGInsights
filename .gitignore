@@ -2,6 +2,3 @@ node_modules
 package-lock.json
 .idea
 .DS_Store
-files
-out
-constants/personal_info.js
