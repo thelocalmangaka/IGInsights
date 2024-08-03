@@ -124,7 +124,7 @@ Token successfully generated: {your_token_here}
 $ npm run media
 ```
 
-10. This will call Instagram's Basic Display API so that it can print the list of all media to **files/permalinks.txt**.
+10. This will call Instagram's Basic Display API so that it can print the list of all media to **files/media.csv**.
 
 ```
 Media permalinks obtained and written to file.
