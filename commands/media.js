@@ -30,7 +30,7 @@ async function main() {
         fs.appendFileSync(PATHS.MEDIA, media.media_type + ',');
         fs.appendFileSync(PATHS.MEDIA, media.permalink + '\n');
     }
-    console.log(`Media permalinks obtained and written to file.`);
+    console.log(`Media info obtained and written to file.`);
 }
 
 await main();

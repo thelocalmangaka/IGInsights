@@ -32,6 +32,10 @@ Additionally, the [current APIs available](https://developers.facebook.com/docs/
 17. Impressions from profile
 18. Impressions from other
 
+(Non-numeric stats):
+19. Media type
+20. Timestamp of publication
+
 # IMPORTANT ADVISORY
 **WARNING: This program uses Selenium, which is intended for automated testing, and Instagram advises against using bots to scrape their website. Using this tool may result in HTTP 429 errors ("Too Many Requests" errors), which may result in a temporary block in access from viewing your insights, and Instagram issuing a warning to your account.**
 
@@ -127,7 +131,7 @@ $ npm run media
 10. This will call Instagram's Basic Display API so that it can print the list of all media to **files/media.csv**.
 
 ```
-Media permalinks obtained and written to file.
+Media info obtained and written to file.
 ```
 
 11. Due to a CORS issue, certain data will be omitted from fetch() calls within NodeJs, and so the program switches to a bash script to do curl calls on every media object listed in permalinks.txt, and in effect generate a list of every media's insight ID, written to **files/insights.csv**.
