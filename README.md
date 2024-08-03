@@ -33,6 +33,7 @@ Additionally, the [current APIs available](https://developers.facebook.com/docs/
 18. Impressions from other
 
 (Non-numeric stats):
+
 19. Media type
 20. Timestamp of publication
 
