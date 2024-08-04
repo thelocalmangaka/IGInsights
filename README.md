@@ -84,6 +84,21 @@ $ npm install
 ```
 
 # How to Use
+```
+tl;dr
+
+1) Type in "npm run start" in terminal
+
+2) Login once for token generation
+
+3) Login a second time to start scraping posts for insights
+
+4) View results in out/insights.csv
+
+Shortcuts to skip token generation / retrieving insight URLs are mentioned at the end of this document.
+```
+
+
 ### Part 1: Code Generation
 
 1. Make sure you are logged into your Instagram account on your browser.
