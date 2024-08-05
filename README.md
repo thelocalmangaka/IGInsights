@@ -1,3 +1,11 @@
+# [NOTICE: Project Deprecation]
+
+This project was created under the false presumption that the Insight API's could only be accessed with Business Verification, and that Selenium had to be used as a less optimal but last-resort solution.
+
+I eventually realized this is false, and also tested and verified that I can indeed access the API's without business verification. And thus this implementation has become unnecessary, and so I will now be deprecating this project.
+
+That being said, this project does function successfully in generating Instagram insight analytics. But a better implementation can exist.
+
 # Overview
 This project aims to help Instagram users with public profiles and without businesses view aggregate insights on their posts and reels.
 
