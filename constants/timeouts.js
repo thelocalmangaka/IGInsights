@@ -17,6 +17,8 @@ export async function login(driver, url, redirect_url) {
     // User is given 60 seconds to login to Instagram with username/password
     await setDriverTimeout(driver, LOGIN_TIMEOUT);
     await driver.get(url);
+    await new Promise(r => setTimeout(r, TIMEOUT));
+    console.log(url);
     await driver.wait(until.urlMatches(new RegExp(redirect_url)));
     // Program is given 5 seconds to find elements
     await setDriverTimeout(driver, TIMEOUT);

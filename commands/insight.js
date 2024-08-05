@@ -3,7 +3,7 @@ import {INSIGHTS, INSIGHTS_ELEMENT_ID_PREFIX, INSIGHTS_UNAVAILABLE_TEXT} from ".
 import fs from "fs";
 import { Builder, By, until } from 'selenium-webdriver';
 import {PATHS} from "../constants/paths.js";
-import {login, LOGIN_TIMEOUT, TIMEOUT} from "../constants/timeouts.js";
+import {login, TIMEOUT} from "../constants/timeouts.js";
 
 const INSIGHT_URL = "https://www.instagram.com/insights/media/";
 
@@ -35,6 +35,8 @@ async function getInsightText(insightUrl) {
         try {
             console.log(`Reading contents of ${insightUrl}`);
             await driver.get(insightUrl);
+            // Wait between URL requests to avoid HTTP-429 errors
+            await new Promise(r => setTimeout(r, TIMEOUT));
 
             const elements = await driver.findElements(By.xpath('//*[@id]'));
             let text = "";
